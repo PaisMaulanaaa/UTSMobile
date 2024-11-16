@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Title Bar -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman Utama"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <!-- Card for Menabung -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardMenabung"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/titleText"
+        android:layout_marginTop="16dp"
+        cardView:cardElevation="6dp"
+        cardView:cardCornerRadius="12dp"
+        cardView:cardBackgroundColor="#E3F2FD"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iconMenabung"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_menabung"
+                android:layout_alignParentStart="true"
+                android:tint="#2196F3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iconMenabung"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:text="Menabung"
+                android:textSize="18sp"
+                android:textColor="#2196F3" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Pemasukan -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPemasukan"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardMenabung"
+        cardView:cardElevation="6dp"
+        cardView:cardCornerRadius="12dp"
+        cardView:cardBackgroundColor="#E8F5E9"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iconPemasukan"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_pemasukan"
+                android:layout_alignParentStart="true"
+                android:tint="#4CAF50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iconPemasukan"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:text="Pemasukan"
+                android:textSize="18sp"
+                android:textColor="#4CAF50" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Card for Pengeluaran -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPengeluaran"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/cardPemasukan"
+        cardView:cardElevation="6dp"
+        cardView:cardCornerRadius="12dp"
+        cardView:cardBackgroundColor="#FFEBEE"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iconPengeluaran"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_pengeluaran"
+                android:layout_alignParentStart="true"
+                android:tint="#F44336" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/iconPengeluaran"
+                android:layout_marginStart="16dp"
+                android:layout_centerVertical="true"
+                android:text="Pengeluaran"
+                android:textSize="18sp"
+                android:textColor="#F44336" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
