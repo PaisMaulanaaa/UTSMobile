@@ -18,7 +18,7 @@ LOGO
 </div>
 
 <div align="center">
-  <img src="gambar/LOGO.png" alt="Resep Sehat Logo" width="100" height="100">
+  <img src="gambar/LOGO.png" alt="Pembukuan Logo" width="100" height="100">
 </div>
 
 ### StoryBoard
